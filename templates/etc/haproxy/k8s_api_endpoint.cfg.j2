@@ -1,5 +1,5 @@
 frontend k8s_api_endpoint_frontend
-  bind {{ ha_proxy_frontend_bind_address }}:{{ ha_proxy_frontend_port }}
+  bind {{ haproxy_frontend_bind_address }}:{{ haproxy_frontend_port }}
   mode tcp
   option tcplog
   default_backend k8s_api_endpoint_backend

@@ -26,8 +26,8 @@ Role Variables
 --------------
 
 ```
-ha_proxy_frontend_bind_address: "127.0.0.1"
-ha_proxy_frontend_port: "16443"
+haproxy_frontend_bind_address: "127.0.0.1"
+haproxy_frontend_port: "16443"
 ```
 
 Dependencies
@@ -41,7 +41,7 @@ Example Playbook
 ```yaml
 - hosts: servers
   roles:
-    - githubixx.ha_proxy
+    - githubixx.haproxy
 ```
 
 License
