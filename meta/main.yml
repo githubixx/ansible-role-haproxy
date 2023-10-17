@@ -1,0 +1,21 @@
+---
+# Copyright (C) 2023 Robert Wimmer
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+galaxy_info:
+  author: Robert Wimmer
+  description: Installs HAProxy to be used by various Kubernetes services
+  license: GPL-3.0-or-later
+  min_ansible_version: "2.11"
+  namespace: githubixx
+  role_name: haproxy
+  platforms:
+    - name: Ubuntu
+      versions:
+        - "jammy"
+  galaxy_tags:
+    - networking
+    - linux
+    - loadbalancer
+    - ha-proxy
+    - haproxy
