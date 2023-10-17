@@ -1,0 +1,10 @@
+<!--
+Copyright (C) 2023 Robert Wimmer
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+# CHANGELOG
+
+## 0.1.0
+
+- initial implementation
