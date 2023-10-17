@@ -4,11 +4,11 @@
 
 galaxy_info:
   author: Robert Wimmer
-  description: Installs ha-proxy to be used by various Kubernetes services
+  description: Installs HAProxy to be used by various Kubernetes services
   license: GPL-3.0-or-later
   min_ansible_version: "2.11"
   namespace: githubixx
-  role_name: ha_proxy
+  role_name: haproxy
   platforms:
     - name: Ubuntu
       versions:
