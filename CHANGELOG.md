@@ -5,6 +5,11 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 # CHANGELOG
 
+## 0.2.0
+
+- introduce `haproxy_k8s_api_endpoint_port` variable
+- add variable comments
+
 ## 0.1.0
 
 - initial implementation
