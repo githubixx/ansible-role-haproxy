@@ -2,5 +2,11 @@
 # Copyright (C) 2023 Robert Wimmer
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+# Address which haproxy service is listening for incoming requests
 haproxy_frontend_bind_address: "127.0.0.1"
+
+# Port which haproxy is listening for incoming requests
 haproxy_frontend_port: "16443"
+
+# Port where kube-apiserver is listening
+haproxy_k8s_api_endpoint_port: "6443"
