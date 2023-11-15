@@ -11,5 +11,5 @@ backend k8s_api_endpoint_backend
   stick on src
 
 {% for host in groups["k8s_controller"] %}
-  server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host]['ansible_' + k8s_interface].ipv4.address }}:{{ k8s_apiserver_secure_port }} check check-ssl verify none
+  server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host]['ansible_' + k8s_interface].ipv4.address }}:{{ haproxy_k8s_api_endpoint_port }} check check-ssl verify none
 {% endfor %}
