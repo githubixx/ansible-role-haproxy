@@ -7,7 +7,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 ## 0.2.1
 
-- install `haproxy` with Ansible's `package` module instead of `apt`
+- install `haproxy` with Ansible's `package` module instead of `apt` (contribution by @szymon-filipiak)
 
 ## 0.2.0
 
