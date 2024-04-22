@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 - name: Install haproxy
-  ansible.builtin.apt:
+  ansible.builtin.package:
     name:
       - "haproxy"
     state: present
