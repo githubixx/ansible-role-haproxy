@@ -1,5 +1,5 @@
 ---
-# Copyright (C) 2023 Robert Wimmer
+# Copyright (C) 2023-2026 Robert Wimmer
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 - name: Install haproxy
@@ -12,7 +12,7 @@
   ansible.builtin.file:
     path: /etc/systemd/system/haproxy.service.d
     state: directory
-    mode: 0755
+    mode: "0755"
     owner: root
     group: root
 
@@ -22,7 +22,7 @@
     dest: /etc/systemd/system/haproxy.service.d/override.conf
     owner: root
     group: root
-    mode: 0644
+    mode: "0644"
   notify:
     - Reload systemd
     - Restart haproxy
@@ -33,7 +33,7 @@
     dest: /etc/haproxy/k8s_api_endpoint.cfg
     owner: root
     group: root
-    mode: 0644
+    mode: "0644"
   notify:
     - Reload haproxy
 
