@@ -1,9 +1,16 @@
 <!--
-Copyright (C) 2023 Robert Wimmer
+Copyright (C) 2023-2026 Robert Wimmer
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
 # CHANGELOG
+
+## 0.2.2
+
+- replace injected `ansible_*` facts usage with `ansible_facts[...]` (prepares for ansible-core 2.24 where `INJECT_FACTS_AS_VARS` default changes)
+- `tasks/main.yml`: fix forbidden implicit octal values
+- `meta/main.yml`: fix ansible-lint issue: Tags must contain lowercase letters and digits only., invalid: ha-proxy
+- add `.gitignore`
 
 ## 0.2.1
 
